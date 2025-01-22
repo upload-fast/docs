@@ -1,11 +1,32 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+## Principles
 
-## What is Nextra?
+File upload services don't need to have confusing pricing, docs or setup.
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+File uploads should lack boilerplate altogether..
 
-## Documentation
+File uploads at scale should be cheap now, since object storage is cheap.
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+### Why use this tool ?
+
+With Upload-Fast you get:
+
+- Cloudlfare's infrastructure,
+
+- Simple API that just works
+
+- Up to 7x cheaper than traditional S3 setups.
+
+- Start with a one-time payment (that's how cheap object storage is..!)
+
+Grab your API key, activate it and add a few lines of code to start uploading files
+
+It's really that simple
+
+```javascript
+const upload = await uploadfast.upload(file, {
+	apiKey: 'your_api_key',
+})
+
+// Your file is ready to use
+console.log(upload.url)
+```
