@@ -1,10 +1,10 @@
-# Nextra Docs Template 
+# UploadFast Documentation Site
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+This is the documentation site for [@Web](https://www.uploadfast.dev).
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+[**Live Demo →**](https://www.uploadfast.dev)
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+[![](.github/screenshot.png)](https://www.uploadfast.dev)
 
 ## Quick Start
 
