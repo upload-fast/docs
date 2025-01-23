@@ -1,11 +1,7 @@
 {
 	"index": "Introduction",
-	"another": "Get started",
-	"guides": "Framework Guides",
-	"about": {
-		"title": "About",
-		"type": "page"
-	},
+	"get-started": "Get started",
+	"framework-guides": "Framework Guides",
 	"contact": {
 		"title": "Contact ↗",
 		"type": "page",

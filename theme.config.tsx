@@ -15,12 +15,9 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/upload-fast',
   },
-  chat: {
-    link: 'https://discord.com',
-  },
   docsRepositoryBase: 'https://github.com/upload-fast/docs',
   footer: {
-    text: 'Upload-Fast',
+    text: <div>&copy; {new Date().getFullYear()} UploadFast.</div>,
   },
 }
 

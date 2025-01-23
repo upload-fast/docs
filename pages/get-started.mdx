@@ -1,0 +1,48 @@
+#### Obtaining an API Key
+
+- Sign in to the uploadfast dashboard.
+- Create an API key (if you haven't already) by clicking
+  **[add new key](https://www.uploadfast.dev/dashboard/keys)**.
+
+Before using the service, activate your project which validates all your API keys.
+
+### Using the API Key
+
+To authenticate your requests, simply include the **api-key** header in your request.
+
+```http
+api-key: YOUR_API_KEY
+```
+
+#### Sample request in Node js.
+
+```js
+const response = await fetch('https://uploadfast-server.fly.dev/upload', {
+ method: 'POST',
+ headers: {
+    'Content-Type': 'application/json'
+    'api-key' : {process.env.UPLOADFAST_KEY}
+ },
+ body: {} /* Formdata object with your file in there */
+});
+```
+
+### Javascript SDK
+
+(UploadFast is in beta, so this API is likely to change)
+
+- Install the SDK
+
+```powershell
+pnpm add @uploadfast/client
+```
+
+- Upload file.
+
+```js
+const fast = createClient({ apiKey: UPLOADFAST_API_KEY })
+const fileData = await fast.upload({ resource: file })
+const { url, file_name } = fileData[0]
+```
+
+The SDK's better documented [here](https://github.com/upload-fast/js-sdk)
